@@ -1,13 +1,15 @@
 package com.cydeo.enums;
 
-public enum InvoiceType {
+import lombok.Getter;
 
-    PURCHASE("Purchase"),
-    SALES("Sales");
+@Getter
+public enum CompanyStatus {
+
+    ACTIVE ("Active"), PASSIVE ("Passive");
 
     private String value;
 
-    InvoiceType(String value) {
+    CompanyStatus(String value) {
         this.value = value;
     }
 
